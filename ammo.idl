@@ -537,6 +537,9 @@ interface btTypedConstraint {
   void setBreakingImpulseThreshold([Const] float threshold);
   [Const] float getParam(long num, long axis);
   void setParam(long num, float value, long axis);
+  
+  [Const] btRigidBody getRigidBodyA();
+  [Const] btRigidBody getRigidBodyB();
 };
 
 enum btConstraintParams {
